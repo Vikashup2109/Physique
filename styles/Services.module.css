@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+}
+
+.ServicesText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ServicesText>:nth-child(1) {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.ServicesText>:nth-child(2), .ServicesText>:nth-child(3) {
+    font-size: 2rem;
+    padding: .5rem;
+} 
+
+.ServicesBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.ServiceName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ImageWrapper {
+    width: 15rem;
+    height: 15rem;
+}
+
+.ServiceName>:nth-child(2) {
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.ServiceName>:nth-child(3) {
+    opacity: 85%;
+    word-wrap: break-word;
+    width: 20rem;
+    text-align: center;
+}

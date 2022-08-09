@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.heading>:nth-child(1) {
+    color: var(--themeBrown);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading >:nth-child(2), .heading>:nth-child(3){
+    font-size: 2rem;
+}
+
+.heading>:nth-child(4) {
+    font-size: 1rem;
+}
+
+.ImageWrapper {
+    height: 16rem;
+    width: 16rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.products>:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: flex-start;
+    color: var(--themeBrown);
+}
+
+.wheySection {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.whey {
+    display: flex;
+    align-items: flex-start;
+    width:min-content;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.whey:hover {
+    cursor: pointer;
+}
+
+.whey>:nth-child(2) {
+    font-weight: bold;
+}
+
+.ImageWrapper>span>img:hover {
+    transform: scale(1.1);
+}

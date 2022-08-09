@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    position: relative;
+}
+
+.SmallDumbell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: .5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: .2rem;
+}
+
+.HeroText {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.miniText {
+    margin: 1rem;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 70%;
+    opacity: 85%;
+
+}
+
+.Hotter {
+    font-size: larger;
+    color: var(--themeBrown);
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.RightSide {
+    display:flex;
+    position: relative;
+}
+
+.ImageContainer {
+    width: 40rem;
+    position: relative;
+    top: -5rem;
+    /* right: -6.5rem; */
+}
+
+.ContactUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 5rem;
+    top: 1.5rem;
+    left: 6rem;
+    gap: 1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    color: var(--themeBrown);
+}
+
+.ContactUs:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.ContactUs>span{
+    font-weight: 600;
+}
+
+.ContactUs>div{
+    background: rgb(39, 153, 39);
+    border-radius: 50%;
+    width: fit-content;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
