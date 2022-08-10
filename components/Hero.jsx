@@ -2,6 +2,7 @@ import css from '../styles/Hero.module.css'
 import Image from 'next/image'
 import Dumbell from "../assets/Dumbell.png"
 import HeroImage from "../assets/HeroImage.png"
+// import ImageHero from "../assets/ImageHero.png"
 import {UilPhone} from "@iconscout/react-unicons"
 
 
@@ -31,6 +32,7 @@ export default function Hero() {
             <div className={css.RightSide}>
                 <div className={css.ImageContainer}>
                 <Image src={HeroImage} alt=""/>
+                {/* <Image src={ImageHero} alt=""/> */}
                 </div>
 
                 <div className={css.ContactUs}>

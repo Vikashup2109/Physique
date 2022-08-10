@@ -50,10 +50,10 @@
 }
 
 .ImageContainer {
-    width: 40rem;
+    width: 35rem;
     position: relative;
-    top: -5rem;
-    /* right: -6.5rem; */
+    top: -2rem;
+    right: 1.5rem;
 }
 
 .ContactUs{
@@ -65,7 +65,7 @@
     padding: 1rem;
     border-radius: 5rem;
     top: 1.5rem;
-    left: 6rem;
+    left: -4rem;
     gap: 1rem;
     background-color: white;
     box-shadow: var(--shadow);

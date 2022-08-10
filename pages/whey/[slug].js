@@ -5,6 +5,8 @@ import Image from "next/image";
 import LeftArrow from "../../assets/LeftArrow.png"
 import RightArrow from "../../assets/RightArrow.png"
 import { useState } from "react";
+import { useStore } from "../../store/store";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Whey({ whey }) {
 
@@ -19,6 +21,14 @@ export default function Whey({ whey }) {
         ? null
         : setQuantity((prev) => prev-1)
     }
+
+// Add to Cart Function
+    const addWhey = useStore((state) => state.addWhey);
+    const addtoCart = () => {
+        addWhey({...whey, price: whey.price[Size],quantity: Quantity,size: Size})
+        toast.success("Item Added in Cart")
+    }
+
     return (
         <Layout>
             <div className={css.container}>
@@ -76,11 +86,11 @@ export default function Whey({ whey }) {
                     </div>
 
                     {/* Add to Cart Button */}
-                    <div className={`btn ${css.btn}`}>
+                    <div className={`btn ${css.btn}`} onClick= {addtoCart}>
                         Add to Cart
                     </div>
                 </div>
-
+                <Toaster />
             </div>
         </Layout>
     )
