@@ -1,0 +1,36 @@
+.container {
+    padding: 0.2rem;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1rem;
+}
+
+.tableBody>tr>td {
+    text-align: center;
+}
+
+.tableBody>tr>:nth-child(2) {
+    width: 25%;
+}
+
+.ImageTd>span>img {
+    border-radius: 10px;
+}
+
+.ImageTd:hover {
+    transform: scale(1.1);
+}
+
+.RemoveItem {
+    color: #F54748;
+    /* font-weight: bold; */
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
