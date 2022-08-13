@@ -21,7 +21,8 @@ export default function Header() {
             {/* Mid Side */}
             <div>
                 <ul className={css.midSide}>
-                    <li>Home</li>
+                    <li>
+                        <Link href="/.." >Home</Link></li>
                     <li>Products</li>
                     <li>Contacts</li>
                 </ul>

@@ -17,10 +17,8 @@ body {
   --pink: #FDECEC;
   --gray: #828282;
   --shadow: -4px 12px 20px -2px rgba(0, 0, 0, 0.19);
-  --background-color:  linear-gradient(180deg, rgba(255, 237, 237, 0.85) 0%, rgba(255, 255, 255, 0) 30rem);
-  --cartBack : rgba(255, 255, 255, 0.38);
+  --background-color:  linear-gradient(180deg, rgba(209, 209, 209, 0.85) 0%, rgba(244, 244, 244, 0) 120rem);
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -33,7 +31,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--themeRed);
+  background: var(--themeBrown);
   border-radius: 1rem;
 }
 

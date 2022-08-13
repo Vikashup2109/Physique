@@ -24,7 +24,7 @@
 }
 .midSide>li:hover{
     cursor: pointer;
-    color: var(--themeRed);
+    color: var(--themeBrown);
 }
 
 .rightSide{
