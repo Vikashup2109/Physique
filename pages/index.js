@@ -21,7 +21,7 @@ export default function Home({wheys}) {
         <main>
           <Hero/>   
           <Services/>
-          <Products wheys={wheys} />
+          <Products wheys={wheys}  id="products"/>
         </main>
       </div>
       </Layout>

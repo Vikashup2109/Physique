@@ -64,6 +64,10 @@
     color: var(--themeBrown);
 }
 
+.EmptyCartText > :nth-child(2) :hover {
+    text-decoration: underline;
+}
+
 .EmptyCartText > :nth-child(3)> span {
     opacity: 100%;
 }
