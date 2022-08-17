@@ -1,11 +1,11 @@
-import { useStore } from "../store/store";
-import Layout from "../components/layout";
-import css from "../styles/Cart.module.css"
-import { urlFor } from "../lib/client";
 import Image from "next/image";
+import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import EmptyCart from "../assets/EmptyCart.png";
-import Link from "next/link";
+import Layout from "../components/layout";
+import { urlFor } from "../lib/client";
+import { useStore } from "../store/store";
+import css from "../styles/Cart.module.css";
 
 export default function Cart() {
     const CartData = useStore((state) => state.cart)
@@ -115,7 +115,7 @@ export default function Cart() {
                      />
                     <div className={css.EmptyCartText}>
                     <span><span style={{color: "var(--themeBrown)"}}>See,</span>Your Cart is Getting Upset</span>
-                    <span><Link href="/">Let's add some items </Link> </span>
+                    <span><Link href="/">Let&aposs add some items </Link> </span>
                     <span>And make Your Cart <span style={{color: "var(--themeBrown)"}}>Happy</span></span>
                     </div>
                  </div>

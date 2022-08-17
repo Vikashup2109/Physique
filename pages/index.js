@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
-import Services from "../components/Services"
 import Layout from "../components/layout";
-import css from "../styles/Home.module.css"
+import Products from "../components/Products";
+import Services from "../components/Services";
 import { client } from "../lib/client";
-import Products from "../components/Products"
+import css from "../styles/Home.module.css";
 
 export default function Home({wheys}) {
 
@@ -21,7 +21,7 @@ export default function Home({wheys}) {
         <main>
           <Hero/>   
           <Services/>
-          <Products wheys={wheys}  id="products"/>
+          <Products wheys={wheys}/>
         </main>
       </div>
       </Layout>

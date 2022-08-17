@@ -1,10 +1,10 @@
-import css from '../styles/Header.module.css';
-import Image from 'next/image'
-import Logo from '../assets/Logo.png';
-import {UilShoppingBag} from '@iconscout/react-unicons'
-import { useStore } from '../store/store';
+import { UilShoppingBag } from '@iconscout/react-unicons';
+import Image from 'next/image';
 import Link from 'next/link';
+import Logo from '../assets/Logo.png';
 import Cart from '../pages/cart';
+import { useStore } from '../store/store';
+import css from '../styles/Header.module.css';
 
 export default function Header() {
     const state = useStore((state) => state)
